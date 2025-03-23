@@ -46,7 +46,6 @@ agg_df = parsed_df \
         min("timestamp").alias("timestamp")
     )
 
-# alerts_conditions.csv должен быть в той же директории
 alerts_schema = StructType([
     StructField("id", IntegerType()),
     StructField("humidity_min", IntegerType()),
